@@ -35,9 +35,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
-Date "7 feb 2014"
+Date "8 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -120,5 +120,11 @@ S 10050 1800 500  4300
 U 52EC4E3C
 F0 "TerminalBlock" 50
 F1 "TerminalBlock.sch" 50
+$EndSheet
+$Sheet
+S 4700 1000 1700 1050
+U 52F627C8
+F0 "PowerAdjustmentMonitor" 50
+F1 "PowerAdjustmentMonitor.sch" 50
 $EndSheet
 $EndSCHEMATC

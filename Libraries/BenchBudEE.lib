@@ -1,5 +1,19 @@
-EESchema-LIBRARY Version 2.3  Date: 2/7/2014 1:19:32 PM
+EESchema-LIBRARY Version 2.3  Date: 2/8/2014 11:25:45 PM
 #encoding utf-8
+#
+# -12P
+#
+DEF -12P #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 130 20 H I C CNN
+F1 "-12P" 0 100 30 H V C CNN
+F2 "~" 0 0 60 H V C CNN
+F3 "~" 0 0 60 H V C CNN
+DRAW
+X -12P 1 0 0 0 U 20 20 0 0 W N
+P 3 0 1 0  0 0  0 50  0 50 N
+P 7 0 1 0  0 80  30 50  -20 50  -30 50  0 80  0 80  0 80 F
+ENDDRAW
+ENDDEF
 #
 # SPDT
 #

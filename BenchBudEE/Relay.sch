@@ -35,9 +35,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 4 9
 Title ""
-Date "7 feb 2014"
+Date "8 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -178,19 +178,8 @@ F 3 "~" H 5500 2650 30  0000 C CNN
 	1    5500 2650
 	-1   0    0    1   
 $EndComp
-$Comp
-L +12V #PWR?
-U 1 1 52F44A91
-P 5500 1950
-F 0 "#PWR?" H 5500 1900 20  0001 C CNN
-F 1 "+12V" H 5500 2050 30  0000 C CNN
-F 2 "" H 5500 1950 60  0000 C CNN
-F 3 "" H 5500 1950 60  0000 C CNN
-	1    5500 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5500 1950 5500 2400
+	5500 1900 5500 2400
 Wire Wire Line
 	5500 4350 4350 4350
 Connection ~ 5500 3500
@@ -260,4 +249,15 @@ Text Notes 6600 3950 0    60   ~ 0
 Kickback Diode
 Text Notes 9000 4000 0    60   ~ 0
 Relay
+$Comp
+L +12P #PWR?
+U 1 1 52F62CEB
+P 5500 1900
+F 0 "#PWR?" H 5500 1870 30  0001 C CNN
+F 1 "+12P" H 5500 2000 30  0000 C CNN
+F 2 "" H 5500 1900 60  0000 C CNN
+F 3 "" H 5500 1900 60  0000 C CNN
+	1    5500 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
