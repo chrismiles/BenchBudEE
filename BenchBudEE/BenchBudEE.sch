@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title ""
-Date "8 feb 2014"
+Date "9 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -84,7 +84,7 @@ F4 "Relay+" I R 9650 5800 60
 F5 "Relay-" O R 9650 6050 60 
 $EndSheet
 $Sheet
-S 1950 1000 1750 1050
+S 950  1000 1750 1050
 U 52EC4DDC
 F0 "Power" 50
 F1 "Power.sch" 50
