@@ -35,7 +35,7 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 9 9
 Title ""
 Date "10 feb 2014"
 Rev ""
@@ -45,24 +45,255 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7250 4150 0    60   Output ~ 0
-Relay+
-Text HLabel 7250 4350 0    60   Input ~ 0
-Relay-
-Text HLabel 7250 2500 0    60   Output ~ 0
+Text HLabel 8700 4750 2    60   Output ~ 0
+RELAY+
+Text HLabel 10450 4750 2    60   Output ~ 0
+RELAY-
+Text HLabel 8650 3250 2    60   Output ~ 0
 MOSI
-Text HLabel 7250 2700 0    60   Input ~ 0
+Text HLabel 8650 3100 2    60   Input ~ 0
 MISO
-Text HLabel 7250 2900 0    60   Output ~ 0
+Text HLabel 8650 2950 2    60   Output ~ 0
 SCLK
-Text HLabel 7250 3100 0    60   Output ~ 0
-CS_N
-Text HLabel 7250 1550 0    60   Output ~ 0
-LED_EN
-Text HLabel 7250 1750 0    60   Output ~ 0
-LED_FREQ
-Text HLabel 7250 850  0    60   Output ~ 0
-FAN_EN
-Text HLabel 7250 1050 0    60   Input ~ 0
+Text HLabel 8650 3400 2    60   Output ~ 0
+DAC_CS_N
+Text HLabel 8700 4900 2    60   Output ~ 0
+FAN_EN_N
+Text HLabel 2450 4050 0    60   Input ~ 0
 TACH_MEAS
+$Comp
+L ARDUINOPINS ARD?
+U 1 1 52F9043E
+P 5800 3700
+F 0 "ARD?" H 6500 2200 60  0000 C CNN
+F 1 "ARDUINOPINS" H 5850 3700 60  0000 C CNN
+F 2 "" H 5850 3200 60  0000 C CNN
+F 3 "" H 5850 3200 60  0000 C CNN
+	1    5800 3700
+	1    0    0    -1  
+$EndComp
+Text HLabel 2450 3900 0    60   Input ~ 0
+CURR_MEAS
+$Comp
+L R R?
+U 1 1 52F90820
+P 7700 4900
+F 0 "R?" V 7780 4900 40  0000 C CNN
+F 1 "R" V 7707 4901 40  0000 C CNN
+F 2 "~" V 7630 4900 30  0000 C CNN
+F 3 "~" H 7700 4900 30  0000 C CNN
+	1    7700 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 4900 7050 4900
+Text Notes 7500 5050 0    60   ~ 0
+(Jumpers)
+$Comp
+L R R?
+U 1 1 52F90A97
+P 7700 4750
+F 0 "R?" V 7780 4750 40  0000 C CNN
+F 1 "R" V 7707 4751 40  0000 C CNN
+F 2 "~" V 7630 4750 30  0000 C CNN
+F 3 "~" H 7700 4750 30  0000 C CNN
+	1    7700 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 4750 7450 4750
+$Comp
+L GND #PWR?
+U 1 1 52F915E6
+P 9600 5100
+F 0 "#PWR?" H 9600 5100 30  0001 C CNN
+F 1 "GND" H 9600 5030 30  0001 C CNN
+F 2 "" H 9600 5100 60  0000 C CNN
+F 3 "" H 9600 5100 60  0000 C CNN
+	1    9600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 52F9185A
+P 3550 4050
+F 0 "R?" V 3630 4050 40  0000 C CNN
+F 1 "R" V 3557 4051 40  0000 C CNN
+F 2 "~" V 3480 4050 30  0000 C CNN
+F 3 "~" H 3550 4050 30  0000 C CNN
+	1    3550 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F91860
+P 3550 3900
+F 0 "R?" V 3630 3900 40  0000 C CNN
+F 1 "R" V 3557 3901 40  0000 C CNN
+F 2 "~" V 3480 3900 30  0000 C CNN
+F 3 "~" H 3550 3900 30  0000 C CNN
+	1    3550 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 3900 2450 3900
+Wire Wire Line
+	3300 4050 2450 4050
+Wire Wire Line
+	3800 3900 4500 3900
+Wire Wire Line
+	3800 4050 4500 4050
+Text HLabel 2450 3600 0    60   Input ~ 0
+V+_ADJ_MON
+Text HLabel 2450 3750 0    60   Input ~ 0
+V-_ADJ_MON
+$Comp
+L R R?
+U 1 1 52F91E08
+P 3550 3750
+F 0 "R?" V 3630 3750 40  0000 C CNN
+F 1 "R" V 3557 3751 40  0000 C CNN
+F 2 "~" V 3480 3750 30  0000 C CNN
+F 3 "~" H 3550 3750 30  0000 C CNN
+	1    3550 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F91E0E
+P 3550 3600
+F 0 "R?" V 3630 3600 40  0000 C CNN
+F 1 "R" V 3557 3601 40  0000 C CNN
+F 2 "~" V 3480 3600 30  0000 C CNN
+F 3 "~" H 3550 3600 30  0000 C CNN
+	1    3550 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 3750 2450 3750
+Wire Wire Line
+	2450 3600 3300 3600
+Wire Wire Line
+	3800 3600 4500 3600
+Wire Wire Line
+	4500 3750 3800 3750
+Text Notes 3350 4200 0    60   ~ 0
+(Jumpers)
+Wire Wire Line
+	7950 4750 8700 4750
+Wire Wire Line
+	7950 4900 8700 4900
+$Comp
+L R R?
+U 1 1 52F92315
+P 7700 3400
+F 0 "R?" V 7780 3400 40  0000 C CNN
+F 1 "R" V 7707 3401 40  0000 C CNN
+F 2 "~" V 7630 3400 30  0000 C CNN
+F 3 "~" H 7700 3400 30  0000 C CNN
+	1    7700 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F9231B
+P 7700 3250
+F 0 "R?" V 7780 3250 40  0000 C CNN
+F 1 "R" V 7707 3251 40  0000 C CNN
+F 2 "~" V 7630 3250 30  0000 C CNN
+F 3 "~" H 7700 3250 30  0000 C CNN
+	1    7700 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F92321
+P 7700 3100
+F 0 "R?" V 7780 3100 40  0000 C CNN
+F 1 "R" V 7707 3101 40  0000 C CNN
+F 2 "~" V 7630 3100 30  0000 C CNN
+F 3 "~" H 7700 3100 30  0000 C CNN
+	1    7700 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F92327
+P 7700 2950
+F 0 "R?" V 7780 2950 40  0000 C CNN
+F 1 "R" V 7707 2951 40  0000 C CNN
+F 2 "~" V 7630 2950 30  0000 C CNN
+F 3 "~" H 7700 2950 30  0000 C CNN
+	1    7700 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 2950 7050 2950
+Wire Wire Line
+	7050 3100 7450 3100
+Wire Wire Line
+	7450 3250 7050 3250
+Wire Wire Line
+	7050 3400 7450 3400
+Wire Wire Line
+	7950 3400 8650 3400
+Wire Wire Line
+	7950 3250 8650 3250
+Wire Wire Line
+	8650 3100 7950 3100
+Wire Wire Line
+	7950 2950 8650 2950
+Text Notes 7500 2800 0    60   ~ 0
+(Jumpers)
+$Comp
+L R R?
+U 1 1 52F923CE
+P 10000 4750
+F 0 "R?" V 10080 4750 40  0000 C CNN
+F 1 "R" V 10007 4751 40  0000 C CNN
+F 2 "~" V 9930 4750 30  0000 C CNN
+F 3 "~" H 10000 4750 30  0000 C CNN
+	1    10000 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10250 4750 10450 4750
+Wire Wire Line
+	9750 4750 9600 4750
+Wire Wire Line
+	9600 4750 9600 5100
+Text HLabel 8650 3550 2    60   Output ~ 0
+LED_EN_PWM
+$Comp
+L R R?
+U 1 1 52F92652
+P 7700 3550
+F 0 "R?" V 7780 3550 40  0000 C CNN
+F 1 "R" V 7707 3551 40  0000 C CNN
+F 2 "~" V 7630 3550 30  0000 C CNN
+F 3 "~" H 7700 3550 30  0000 C CNN
+	1    7700 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 3550 7050 3550
+Wire Wire Line
+	7950 3550 8650 3550
+Text HLabel 8650 3700 2    60   Output ~ 0
+ADC_CS_N
+$Comp
+L R R?
+U 1 1 52F9D11D
+P 7700 3700
+F 0 "R?" V 7780 3700 40  0000 C CNN
+F 1 "R" V 7707 3701 40  0000 C CNN
+F 2 "~" V 7630 3700 30  0000 C CNN
+F 3 "~" H 7700 3700 30  0000 C CNN
+	1    7700 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 3700 7450 3700
+Wire Wire Line
+	7950 3700 8650 3700
 $EndSCHEMATC

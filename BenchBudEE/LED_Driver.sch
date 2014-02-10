@@ -48,9 +48,9 @@ $EndDescr
 Text HLabel 1600 2300 0    60   Input ~ 0
 LED_EN_PWM
 Text HLabel 9100 1100 2    60   Output ~ 0
-String+
-Text HLabel 9100 2450 2    60   Input ~ 0
-String-
+LED_STRING+
+Text HLabel 9100 2450 2    60   Output ~ 0
+LED_STRING-
 $Comp
 L AP5726 U?
 U 1 1 52F83C82
