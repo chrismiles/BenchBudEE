@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title ""
-Date "9 feb 2014"
+Date "10 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -94,10 +94,9 @@ S 7850 4050 1800 600
 U 52EC4DEA
 F0 "LED_Driver" 50
 F1 "LED_Driver.sch" 50
-F2 "EN" I L 7850 4250 60 
-F3 "DREQ" I L 7850 4500 60 
-F4 "String+" O R 9650 4250 60 
-F5 "String-" I R 9650 4500 60 
+F2 "String+" O R 9650 4250 60 
+F3 "String-" I R 9650 4500 60 
+F4 "LED_EN_PWM" I L 7850 4250 60 
 $EndSheet
 $Sheet
 S 10100 750  500  6100
