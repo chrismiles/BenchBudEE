@@ -45,7 +45,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 8700 4750 2    60   Output ~ 0
+Text HLabel 8650 4750 2    60   Output ~ 0
 RELAY+
 Text HLabel 10450 4750 2    60   Output ~ 0
 RELAY-
@@ -55,10 +55,10 @@ Text HLabel 8650 3100 2    60   Input ~ 0
 MISO
 Text HLabel 8650 2950 2    60   Output ~ 0
 SCLK
-Text HLabel 8650 3400 2    60   Output ~ 0
+Text HLabel 8650 3850 2    60   Output ~ 0
 DAC_CS_N
-Text HLabel 8700 4900 2    60   Output ~ 0
-FAN_EN_N
+Text HLabel 8650 3400 2    60   Output ~ 0
+FAN_PWM
 Text HLabel 2450 4050 0    60   Input ~ 0
 TACH_MEAS
 $Comp
@@ -77,18 +77,18 @@ CURR_MEAS
 $Comp
 L R R?
 U 1 1 52F90820
-P 7700 4900
-F 0 "R?" V 7780 4900 40  0000 C CNN
-F 1 "R" V 7707 4901 40  0000 C CNN
-F 2 "~" V 7630 4900 30  0000 C CNN
-F 3 "~" H 7700 4900 30  0000 C CNN
-	1    7700 4900
+P 7700 3400
+F 0 "R?" V 7780 3400 40  0000 C CNN
+F 1 "R" V 7707 3401 40  0000 C CNN
+F 2 "~" V 7630 3400 30  0000 C CNN
+F 3 "~" H 7700 3400 30  0000 C CNN
+	1    7700 3400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7450 4900 7050 4900
-Text Notes 7500 5050 0    60   ~ 0
-(Jumpers)
+	7450 3400 7050 3400
+Text Notes 7250 5150 0    60   ~ 0
+(Rs are Jumpers here)
 $Comp
 L R R?
 U 1 1 52F90A97
@@ -180,18 +180,18 @@ Wire Wire Line
 Text Notes 3350 4200 0    60   ~ 0
 (Jumpers)
 Wire Wire Line
-	7950 4750 8700 4750
+	7950 4750 8650 4750
 Wire Wire Line
-	7950 4900 8700 4900
+	7950 3400 8650 3400
 $Comp
 L R R?
 U 1 1 52F92315
-P 7700 3400
-F 0 "R?" V 7780 3400 40  0000 C CNN
-F 1 "R" V 7707 3401 40  0000 C CNN
-F 2 "~" V 7630 3400 30  0000 C CNN
-F 3 "~" H 7700 3400 30  0000 C CNN
-	1    7700 3400
+P 7700 3850
+F 0 "R?" V 7780 3850 40  0000 C CNN
+F 1 "R" V 7707 3851 40  0000 C CNN
+F 2 "~" V 7630 3850 30  0000 C CNN
+F 3 "~" H 7700 3850 30  0000 C CNN
+	1    7700 3850
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -234,9 +234,9 @@ Wire Wire Line
 Wire Wire Line
 	7450 3250 7050 3250
 Wire Wire Line
-	7050 3400 7450 3400
+	7050 3850 7450 3850
 Wire Wire Line
-	7950 3400 8650 3400
+	7950 3850 8650 3850
 Wire Wire Line
 	7950 3250 8650 3250
 Wire Wire Line
@@ -296,4 +296,49 @@ Wire Wire Line
 	7050 3700 7450 3700
 Wire Wire Line
 	7950 3700 8650 3700
+Text HLabel 8650 4900 2    60   Input ~ 0
+FAN_MODE
+$Comp
+L R R?
+U 1 1 52FAF6A4
+P 7700 4900
+F 0 "R?" V 7780 4900 40  0000 C CNN
+F 1 "R" V 7707 4901 40  0000 C CNN
+F 2 "~" V 7630 4900 30  0000 C CNN
+F 3 "~" H 7700 4900 30  0000 C CNN
+	1    7700 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 4900 8650 4900
+Wire Wire Line
+	7450 4900 7050 4900
+$Comp
+L R R?
+U 1 1 52FAFDE4
+P 3550 3450
+F 0 "R?" V 3630 3450 40  0000 C CNN
+F 1 "R" V 3557 3451 40  0000 C CNN
+F 2 "~" V 3480 3450 30  0000 C CNN
+F 3 "~" H 3550 3450 30  0000 C CNN
+	1    3550 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 3450 4500 3450
+Wire Wire Line
+	3300 3450 2600 3450
+Wire Wire Line
+	2600 3450 2600 2750
+$Comp
+L +12P #PWR?
+U 1 1 52FAFE2B
+P 2600 2750
+F 0 "#PWR?" H 2600 2720 30  0001 C CNN
+F 1 "+12P" H 2600 2850 30  0000 C CNN
+F 2 "" H 2600 2750 60  0000 C CNN
+F 3 "" H 2600 2750 60  0000 C CNN
+	1    2600 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
