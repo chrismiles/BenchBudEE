@@ -35,9 +35,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 4 9
 Title ""
-Date "10 feb 2014"
+Date "12 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -69,8 +69,6 @@ F 3 "" H 850 1850 60  0000 C CNN
 	1    850  1850
 	1    0    0    -1  
 $EndComp
-Connection ~ 3450 1600
-Connection ~ 1650 1250
 Wire Wire Line
 	2950 1500 3450 1500
 Wire Wire Line
@@ -91,7 +89,7 @@ Wire Wire Line
 	3250 2200 3250 3150
 Wire Wire Line
 	3250 3150 3550 3150
-Text Notes 1850 1150 0    60   ~ 0
+Text Notes 1250 1100 0    60   ~ 0
 ATX Power Supply - Molex 24-pin
 Connection ~ 10300 1900
 Wire Wire Line
@@ -190,8 +188,8 @@ F 3 "~" H 9600 1900 60  0000 C CNN
 $EndComp
 Text Notes 9650 1200 0    60   ~ 0
 Filter
-Text Notes 5000 2300 0    60   ~ 0
-Fuses might be PTC Thermistors
+Text Notes 3950 2350 0    60   ~ 0
+PTC Thermistors to limit current
 $Comp
 L GND #PWR?
 U 1 1 52F633F1
@@ -324,50 +322,6 @@ F 3 "~" H 4050 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FUSE F?
-U 1 1 52F629E9
-P 5700 2100
-F 0 "F?" H 5800 2150 40  0000 C CNN
-F 1 "FUSE" H 5600 2050 40  0000 C CNN
-F 2 "~" H 5700 2100 60  0000 C CNN
-F 3 "~" H 5700 2100 60  0000 C CNN
-	1    5700 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L FUSE F?
-U 1 1 52F629E3
-P 5150 1900
-F 0 "F?" H 5250 1950 40  0000 C CNN
-F 1 "FUSE" H 5050 1850 40  0000 C CNN
-F 2 "~" H 5150 1900 60  0000 C CNN
-F 3 "~" H 5150 1900 60  0000 C CNN
-	1    5150 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L FUSE F?
-U 1 1 52F629DD
-P 4400 1700
-F 0 "F?" H 4500 1750 40  0000 C CNN
-F 1 "FUSE" H 4300 1650 40  0000 C CNN
-F 2 "~" H 4400 1700 60  0000 C CNN
-F 3 "~" H 4400 1700 60  0000 C CNN
-	1    4400 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L FUSE F?
-U 1 1 52F629C6
-P 3700 1500
-F 0 "F?" H 3800 1550 40  0000 C CNN
-F 1 "FUSE" H 3600 1450 40  0000 C CNN
-F 2 "~" H 3700 1500 60  0000 C CNN
-F 3 "~" H 3700 1500 60  0000 C CNN
-	1    3700 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L +5V #PWR?
 U 1 1 52F62810
 P 5450 1050
@@ -388,5 +342,63 @@ F 2 "" H 5000 1050 60  0000 C CNN
 F 3 "" H 5000 1050 60  0000 C CNN
 	1    5000 1050
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1900 3300 1050
+Connection ~ 3300 1900
+$Comp
+L +12C #PWR?
+U 1 1 52FAE7F5
+P 3300 1050
+F 0 "#PWR?" H 3300 1020 30  0001 C CNN
+F 1 "+12C" H 3300 1160 40  0000 C CNN
+F 2 "" H 3300 1050 60  0000 C CNN
+F 3 "" H 3300 1050 60  0000 C CNN
+	1    3300 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L THERMISTOR TH?
+U 1 1 52FB015D
+P 3700 1500
+F 0 "TH?" V 3800 1550 50  0000 C CNN
+F 1 "THERMISTOR" V 3600 1500 50  0000 C CNN
+F 2 "~" H 3700 1500 60  0000 C CNN
+F 3 "~" H 3700 1500 60  0000 C CNN
+	1    3700 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L THERMISTOR TH?
+U 1 1 52FB016A
+P 4400 1700
+F 0 "TH?" V 4500 1750 50  0000 C CNN
+F 1 "THERMISTOR" V 4300 1700 50  0000 C CNN
+F 2 "~" H 4400 1700 60  0000 C CNN
+F 3 "~" H 4400 1700 60  0000 C CNN
+	1    4400 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L THERMISTOR TH?
+U 1 1 52FB0170
+P 5150 1900
+F 0 "TH?" V 5250 1950 50  0000 C CNN
+F 1 "THERMISTOR" V 5050 1900 50  0000 C CNN
+F 2 "~" H 5150 1900 60  0000 C CNN
+F 3 "~" H 5150 1900 60  0000 C CNN
+	1    5150 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L THERMISTOR TH?
+U 1 1 52FB0180
+P 5700 2100
+F 0 "TH?" V 5800 2150 50  0000 C CNN
+F 1 "THERMISTOR" V 5600 2100 50  0000 C CNN
+F 2 "~" H 5700 2100 60  0000 C CNN
+F 3 "~" H 5700 2100 60  0000 C CNN
+	1    5700 2100
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
