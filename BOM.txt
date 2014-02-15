@@ -1,0 +1,14 @@
+= BOM for BenchBudEE =
+
+
+== Thermocouple ==
+
+ADC:
+• Microchip MCP3901 Two-Channel Analog Front End
+
+Cold Junction Temperature Sensor:
+• TI LMT84/LMT84-Q1 1.5V, SC70, Analog Temperature Sensors with Class-AB Output
+
+Op-Amp Quad:
+• TI OPA4170AIPWR
+  http://www.digikey.com/product-detail/en/OPA4170AIPWR/296-30239-1-ND/3045447
