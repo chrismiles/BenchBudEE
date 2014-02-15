@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
 Title ""
-Date "12 feb 2014"
+Date "14 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -304,4 +304,10 @@ Text Notes 8050 4650 0    60   ~ 0
 Mosfet is used to select\nVoltage or Current mode here
 Text Notes 7950 650  0    60   ~ 0
 +12C non-filtered / non-current-limited
+Text Notes 7950 2700 0    60   ~ 0
+Drive Transistor
+Text Notes 4150 3000 0    60   ~ 0
+PWM Transistor
+Text Notes 6350 5000 0    60   ~ 0
+Mode Transistor
 $EndSCHEMATC
