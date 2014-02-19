@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 9
 Title ""
-Date "14 feb 2014"
+Date "19 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -341,4 +341,78 @@ F 3 "" H 2600 2750 60  0000 C CNN
 	1    2600 2750
 	1    0    0    -1  
 $EndComp
+$Comp
+L R R?
+U 1 1 53043434
+P 3550 3000
+F 0 "R?" V 3630 3000 40  0000 C CNN
+F 1 "R" V 3557 3001 40  0000 C CNN
+F 2 "~" V 3480 3000 30  0000 C CNN
+F 3 "~" H 3550 3000 30  0000 C CNN
+	1    3550 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 3000 4500 3000
+Wire Wire Line
+	3300 3000 3250 3000
+Wire Wire Line
+	3250 3000 3250 2750
+$Comp
+L +5V #PWR?
+U 1 1 53043481
+P 3250 2750
+F 0 "#PWR?" H 3250 2840 20  0001 C CNN
+F 1 "+5V" H 3250 2840 30  0000 C CNN
+F 2 "" H 3250 2750 60  0000 C CNN
+F 3 "" H 3250 2750 60  0000 C CNN
+	1    3250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5304348E
+P 3550 3150
+F 0 "R?" V 3630 3150 40  0000 C CNN
+F 1 "R" V 3557 3151 40  0000 C CNN
+F 2 "~" V 3480 3150 30  0000 C CNN
+F 3 "~" H 3550 3150 30  0000 C CNN
+	1    3550 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 53043494
+P 3550 3300
+F 0 "R?" V 3630 3300 40  0000 C CNN
+F 1 "R" V 3557 3301 40  0000 C CNN
+F 2 "~" V 3480 3300 30  0000 C CNN
+F 3 "~" H 3550 3300 30  0000 C CNN
+	1    3550 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 3150 3800 3150
+Wire Wire Line
+	3300 3150 2950 3150
+Wire Wire Line
+	2950 3150 2950 3250
+$Comp
+L GND #PWR?
+U 1 1 5304350C
+P 2950 3250
+F 0 "#PWR?" H 2950 3250 30  0001 C CNN
+F 1 "GND" H 2950 3180 30  0001 C CNN
+F 2 "" H 2950 3250 60  0000 C CNN
+F 3 "" H 2950 3250 60  0000 C CNN
+	1    2950 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3300 3150 3300
+Wire Wire Line
+	3150 3300 3150 3150
+Connection ~ 3150 3150
+Wire Wire Line
+	3800 3300 4500 3300
 $EndSCHEMATC
