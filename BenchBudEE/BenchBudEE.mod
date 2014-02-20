@@ -1,0 +1,129 @@
+PCBNEW-LibModule-V1  2/21/2014 9:00:31 AM
+# encoding utf-8
+Units mm
+$INDEX
+4-SMD
+SMA
+TE-SPDT
+$EndINDEX
+$MODULE 4-SMD
+Po 0 0 0 15 53067391 00000000 ~~
+Li 4-SMD
+Sc 0
+AR 
+Op 0 0 0
+T0 1.3 -10.9 1 1 0 0.15 N V 21 N "4-SMD"
+T1 1.3 2.3 1 1 0 0.15 N V 21 N "U**"
+DC -0.2 -2.2 0.2 -1.9 0.15 21
+DS -1.6 -1.3 4 -1.3 0.15 21
+DS 4 -1.3 4 -7.7 0.15 21
+DS 4 -7.7 -1.6 -7.7 0.15 21
+DS -1.6 -7.7 -1.6 -1.3 0.15 21
+$PAD
+Sh "1" R 1.5 1.3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "2" R 1.5 1.3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.54 0
+$EndPAD
+$PAD
+Sh "3" R 1.5 1.3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.54 -9
+$EndPAD
+$PAD
+Sh "4" R 1.5 1.3 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -9
+$EndPAD
+$EndMODULE 4-SMD
+$MODULE SMA
+Po 0 0 0 15 530677C5 00000000 ~~
+Li SMA
+Sc 0
+AR 
+Op 0 0 0
+T0 1.9 -3.2 1 1 0 0.15 N V 21 N "SMA"
+T1 2.2 3.4 1 1 0 0.15 N V 21 N "VAL**"
+DS 3.5 -2.4 3.5 2.4 0.15 21
+DS -0.5 -2.4 -0.5 2.4 0.15 21
+DS -0.5 2.4 4.6 2.4 0.15 21
+DS 4.6 2.4 4.6 -2.4 0.15 21
+DS 4.6 -2.4 -0.5 -2.4 0.15 21
+$PAD
+Sh "1" R 2.5 1.7 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "2" R 2.5 1.7 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4 0
+$EndPAD
+$EndMODULE SMA
+$MODULE TE-SPDT
+Po 0 0 0 15 53067AF7 00000000 ~~
+Li TE-SPDT
+Sc 0
+AR 
+Op 0 0 0
+T0 7.1 -11.8 1 1 0 0.15 N V 21 N "TE-SPDT"
+T1 8.5 11.7 1 1 0 0.15 N V 21 N "VAL**"
+DS 18.8 -10.4 19.8 -10.4 0.15 21
+DS 18.8 10.1 19.8 10.1 0.15 21
+DS -4.3 -10.4 18.8 -10.4 0.15 21
+DS 19.8 -10.4 19.8 10.1 0.15 21
+DS 18.8 10.1 -4.3 10.1 0.15 21
+DS -4.3 10.1 -4.3 -10.4 0.15 21
+$PAD
+Sh "1" C 2 2 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "2" C 2 2 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2 -6
+$EndPAD
+$PAD
+Sh "3" C 2 2 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 14.2 -6
+$EndPAD
+$PAD
+Sh "4" C 2 2 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 14.2 6
+$EndPAD
+$PAD
+Sh "5" C 2 2 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2 6
+$EndPAD
+$EndMODULE TE-SPDT
+$EndLIBRARY
