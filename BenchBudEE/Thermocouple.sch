@@ -288,8 +288,6 @@ F 3 "" H 5150 4550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 3250 5150 4550
-Wire Wire Line
 	5150 4350 5300 4350
 Connection ~ 5150 3100
 Connection ~ 5150 4350
@@ -448,8 +446,6 @@ Wire Wire Line
 	4950 5700 4950 3700
 Wire Wire Line
 	4950 3700 4850 3700
-Wire Wire Line
-	4850 3850 4850 6800
 Wire Wire Line
 	4850 6500 6550 6500
 Wire Wire Line
@@ -722,4 +718,42 @@ Wire Wire Line
 	1250 3950 1450 3950
 Text Notes 1400 4150 2    60   ~ 0
 2-pin header for\nfuture use if\nneeded.
+Text Label 4900 3100 0    60   ~ 0
+CH0+
+Text Label 4900 3250 0    60   ~ 0
+CH0-
+Text Label 4900 3700 0    60   ~ 0
+CH1+
+Text Label 4850 3950 2    60   ~ 0
+CH1-
+$Comp
+L R R49
+U 1 1 5307180E
+P 5150 4050
+F 0 "R49" V 5230 4050 40  0000 C CNN
+F 1 "R" V 5157 4051 40  0000 C CNN
+F 2 "~" V 5080 4050 30  0000 C CNN
+F 3 "~" H 5150 4050 30  0000 C CNN
+	1    5150 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5150 3250 5150 3800
+Wire Wire Line
+	5150 4300 5150 4550
+$Comp
+L R R48
+U 1 1 530719FC
+P 4850 6050
+F 0 "R48" V 4930 6050 40  0000 C CNN
+F 1 "R" V 4857 6051 40  0000 C CNN
+F 2 "~" V 4780 6050 30  0000 C CNN
+F 3 "~" H 4850 6050 30  0000 C CNN
+	1    4850 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 6300 4850 6800
+Wire Wire Line
+	4850 3850 4850 5800
 $EndSCHEMATC
