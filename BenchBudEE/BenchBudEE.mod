@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  2/23/2014 11:04:54 AM
+PCBNEW-LibModule-V1  2/23/2014 10:10:43 PM
 # encoding utf-8
 Units mm
 $INDEX
@@ -8,6 +8,7 @@ $INDEX
 ATX_Header
 Arduino
 BB_switch
+EVUE3K
 SM0805-blob
 SMA
 TE-SPDT
@@ -700,6 +701,61 @@ Ne 0 ""
 Po 2 0
 $EndPAD
 $EndMODULE BB_switch
+$MODULE EVUE3K
+Po 0 0 0 15 5309D700 00000000 ~~
+Li EVUE3K
+Sc 0
+AR 
+Op 0 0 0
+T0 0.6 -7.5 1 1 0 0.15 N V 21 N "EVUE3K"
+T1 0 7.7 1 1 0 0.15 N V 21 N "VAL**"
+DS 12.5 -3 22.5 -3 0.15 21
+DS 22.5 -3 22.5 3 0.15 21
+DS 22.5 3 12.5 3 0.15 21
+DS 7.5 -4 12.5 -4 0.15 21
+DS 12.5 -4 12.5 4 0.15 21
+DS 12.5 4 7.5 4 0.15 21
+DS 7.5 0 7.5 -6.6 0.15 21
+DS 7.5 -6.6 -2 -6.6 0.15 21
+DS -2 -6.6 -2 6.6 0.15 21
+DS -2 6.6 7.5 6.6 0.15 21
+DS 7.5 6.6 7.5 0 0.15 21
+$PAD
+Sh "4" O 2.8 2.2 0 0 0
+Dr 2.2 0 0 O 2.2 1.6
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 4.9
+$EndPAD
+$PAD
+Sh "4" O 2.8 2.2 0 0 0
+Dr 2.2 0 0 O 2.2 1.6
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 -4.9
+$EndPAD
+$PAD
+Sh "2" C 1.6 1.6 0 0 0
+Dr 1.1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.2 0
+$EndPAD
+$PAD
+Sh "1" C 1.6 1.6 0 0 0
+Dr 1.1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.2 2.5
+$EndPAD
+$PAD
+Sh "3" C 1.6 1.6 0 0 0
+Dr 1.1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2.2 -2.5
+$EndPAD
+$EndMODULE EVUE3K
 $MODULE SM0805-blob
 Po 0 0 0 15 53081BF8 00000000 ~~
 Li SM0805-blob
