@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 2/23/2014 10:47:06 AM
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 2/23/2014 11:08:07 AM
 
 BeginCmp
 TimeStamp = /52EC4D59/52F9043E;
@@ -157,21 +157,21 @@ EndCmp
 BeginCmp
 TimeStamp = /52EC4DDC/52F63410;
 Reference = L1;
-ValeurCmp = INDUCTOR;
+ValeurCmp = CM322522-220KL;
 IdModule  = SM1210L;
 EndCmp
 
 BeginCmp
 TimeStamp = /52EC4DDC/52F633F9;
 Reference = L2;
-ValeurCmp = INDUCTOR;
+ValeurCmp = CM322522-220KL;
 IdModule  = SM1210L;
 EndCmp
 
 BeginCmp
 TimeStamp = /52EC4DDC/53041CCE;
 Reference = L3;
-ValeurCmp = INDUCTOR;
+ValeurCmp = CM322522-220KL;
 IdModule  = SM1210L;
 EndCmp
 
@@ -605,35 +605,35 @@ EndCmp
 BeginCmp
 TimeStamp = /52EC4DDC/52F629F1;
 Reference = SW1;
-ValeurCmp = SWITCH_INV;
-IdModule  = ;
+ValeurCmp = Power Switch;
+IdModule  = BB_switch;
 EndCmp
 
 BeginCmp
 TimeStamp = /52EC4DDC/52FB015D;
 Reference = TH1;
-ValeurCmp = THERMISTOR;
+ValeurCmp = MINISMDC050F-2;
 IdModule  = SM1812;
 EndCmp
 
 BeginCmp
 TimeStamp = /52EC4DDC/52FB016A;
 Reference = TH2;
-ValeurCmp = THERMISTOR;
+ValeurCmp = MINISMDC050F-2;
 IdModule  = SM1812;
 EndCmp
 
 BeginCmp
 TimeStamp = /52EC4DDC/52FB0170;
 Reference = TH3;
-ValeurCmp = THERMISTOR;
+ValeurCmp = MINISMDC050F-2;
 IdModule  = SM1812;
 EndCmp
 
 BeginCmp
 TimeStamp = /52EC4DDC/52FB0180;
 Reference = TH4;
-ValeurCmp = THERMISTOR;
+ValeurCmp = MINISMDC050F-2;
 IdModule  = SM1812;
 EndCmp
 

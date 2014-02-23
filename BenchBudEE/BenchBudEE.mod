@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  2/22/2014 2:39:44 PM
+PCBNEW-LibModule-V1  2/23/2014 11:04:54 AM
 # encoding utf-8
 Units mm
 $INDEX
@@ -7,6 +7,7 @@ $INDEX
 4-SMD
 ATX_Header
 Arduino
+BB_switch
 SM0805-blob
 SMA
 TE-SPDT
@@ -644,6 +645,61 @@ Ne 0 ""
 Po -1.27 24.13
 $EndPAD
 $EndMODULE Arduino
+$MODULE BB_switch
+Po 0 0 0 15 53093AFC 00000000 ~~
+Li BB_switch
+Sc 0
+AR 
+Op 0 0 0
+T0 4 -3 1 1 0 0.15 N V 21 N "BB_switch"
+T1 1.4 3.2 1 1 0 0.15 N V 21 N "VAL**"
+DS 0.5 2.2 0.5 6.2 0.15 21
+DS 0.5 6.2 1.1 6.2 0.15 21
+DS 1.1 6.2 1.5 5.8 0.15 21
+DS 1.5 5.8 1.9 6.2 0.15 21
+DS 1.9 6.2 2.5 6.2 0.15 21
+DS 2.5 6.2 2.5 2.2 0.15 21
+DS -4.5 0 -4.5 -2.2 0.15 21
+DS -4.5 -2.2 4.5 -2.2 0.15 21
+DS 4.5 -2.2 4.5 2.2 0.15 21
+DS 4.5 2.2 -4.5 2.2 0.15 21
+DS -4.5 2.2 -4.5 0 0.15 21
+$PAD
+Sh "" C 1.5 1.5 0 0 0
+Dr 1.5 0 0
+At HOLE N 00E0FFFF
+Ne 0 ""
+Po -4.1 0
+$EndPAD
+$PAD
+Sh "" C 1.5 1.5 0 0 0
+Dr 1.5 0 0
+At HOLE N 00E0FFFF
+Ne 0 ""
+Po 4.1 0
+$EndPAD
+$PAD
+Sh "1" C 1.4 1.4 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2 0
+$EndPAD
+$PAD
+Sh "2" C 1.4 1.4 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "3" C 1.4 1.4 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2 0
+$EndPAD
+$EndMODULE BB_switch
 $MODULE SM0805-blob
 Po 0 0 0 15 53081BF8 00000000 ~~
 Li SM0805-blob
