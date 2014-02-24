@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source Z:/src/KiCad/BenchBudEE/BenchBudEE/BenchBudEE.sch)
-    (date "2/24/2014 6:55:42 PM")
+    (date "2/24/2014 7:20:28 PM")
     (tool "eeschema (2013-07-07 BZR 4022)-stable"))
   (components
     (comp (ref U4)
@@ -293,7 +293,9 @@
       (sheetpath (names /LED_Driver/) (tstamps /52EC4DEA/))
       (tstamp 52F845E0))
     (comp (ref D4)
-      (value DIODESCH)
+      (value B0540WS-7)
+      (fields
+        (field (name "MFG Part Number") B0540WS-7))
       (libsource (lib device) (part DIODESCH))
       (sheetpath (names /LED_Driver/) (tstamps /52EC4DEA/))
       (tstamp 52F84602))
@@ -695,6 +697,70 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part LED)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib device) (part RVAR)
+      (fields
+        (field (name Reference) R)
+        (field (name Value) RVAR)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistance)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805)
+        (fp R?-*)
+        (fp SM1206))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part MOS_N)
+      (docs transistors/mos/*.*)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) MOS_N)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num D) (name D) (type passive))
+        (pin (num G) (name G) (type input))
+        (pin (num S) (name S) (type passive))))
+    (libpart (lib device) (part NPN)
+      (docs transistors/bipolar/*.*)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) NPN)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name E) (type passive))
+        (pin (num 2) (name B) (type input))
+        (pin (num 3) (name C) (type passive))))
     (libpart (lib device) (part DIODESCH)
       (description "Diode schottky")
       (footprints
@@ -726,45 +792,6 @@
       (pins
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))))
-    (libpart (lib device) (part LED)
-      (footprints
-        (fp LED-3MM)
-        (fp LED-5MM)
-        (fp LED-10MM)
-        (fp LED-0603)
-        (fp LED-0805)
-        (fp LED-1206)
-        (fp LEDV))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) LED)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive))))
-    (libpart (lib device) (part MOS_N)
-      (docs transistors/mos/*.*)
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) MOS_N)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num D) (name D) (type passive))
-        (pin (num G) (name G) (type input))
-        (pin (num S) (name S) (type passive))))
-    (libpart (lib device) (part NPN)
-      (docs transistors/bipolar/*.*)
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) NPN)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name E) (type passive))
-        (pin (num 2) (name B) (type input))
-        (pin (num 3) (name C) (type passive))))
     (libpart (lib device) (part DIODE)
       (description "Diode simple")
       (footprints
@@ -778,31 +805,6 @@
       (pins
         (pin (num 1) (name A) (type passive))
         (pin (num 2) (name K) (type passive))))
-    (libpart (lib device) (part RVAR)
-      (fields
-        (field (name Reference) R)
-        (field (name Value) RVAR)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part R)
-      (description Resistance)
-      (footprints
-        (fp R?)
-        (fp SM0603)
-        (fp SM0805)
-        (fp R?-*)
-        (fp SM1206))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
     (libpart (lib device) (part THERMISTOR)
       (description Resistance)
       (footprints
@@ -876,15 +878,6 @@
         (pin (num 22) (name P22) (type passive))
         (pin (num 23) (name P23) (type passive))
         (pin (num 24) (name P24) (type passive))))
-    (libpart (lib conn) (part CONN_3)
-      (description "Symbole general de connecteur")
-      (fields
-        (field (name Reference) K)
-        (field (name Value) CONN_3))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name PM) (type passive))
-        (pin (num 3) (name P3) (type passive))))
     (libpart (lib conn) (part CONN_3X2)
       (description "Symbole general de connecteur")
       (fields
@@ -897,6 +890,15 @@
         (pin (num 4) (name 4) (type passive))
         (pin (num 5) (name 5) (type passive))
         (pin (num 6) (name 6) (type passive))))
+    (libpart (lib conn) (part CONN_3)
+      (description "Symbole general de connecteur")
+      (fields
+        (field (name Reference) K)
+        (field (name Value) CONN_3))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name PM) (type passive))
+        (pin (num 3) (name P3) (type passive))))
     (libpart (lib conn) (part CONN_2)
       (description "Symbole general de connecteur")
       (fields
@@ -961,6 +963,18 @@
         (pin (num 2) (name K) (type input))
         (pin (num 3) (name E) (type output))
         (pin (num 4) (name C) (type output))))
+    (libpart (lib BenchBudEE) (part LMT84)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) LMT84)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name GND) (type input))
+        (pin (num 2) (name GND) (type input))
+        (pin (num 3) (name OUT) (type input))
+        (pin (num 4) (name Vdd) (type input))
+        (pin (num 5) (name GND) (type input))))
     (libpart (lib BenchBudEE) (part AP5726)
       (fields
         (field (name Reference) U)
@@ -1001,33 +1015,6 @@
         (pin (num 18) (name SCK) (type input))
         (pin (num 19) (name SDO) (type output))
         (pin (num 20) (name SDI) (type input))))
-    (libpart (lib BenchBudEE) (part MCP4801)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) MCP4801)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name Vdd) (type input))
-        (pin (num 2) (name ~CS) (type input))
-        (pin (num 3) (name SCK) (type input))
-        (pin (num 4) (name SDI) (type input))
-        (pin (num 5) (name ~LDAC) (type input))
-        (pin (num 6) (name ~SHDN) (type input))
-        (pin (num 7) (name Vss) (type input))
-        (pin (num 8) (name Vout) (type input))))
-    (libpart (lib BenchBudEE) (part LMT84)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) LMT84)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name GND) (type input))
-        (pin (num 2) (name GND) (type input))
-        (pin (num 3) (name OUT) (type input))
-        (pin (num 4) (name Vdd) (type input))
-        (pin (num 5) (name GND) (type input))))
     (libpart (lib BenchBudEE) (part ARDUINOPINS)
       (fields
         (field (name Reference) ARD)
@@ -1063,6 +1050,32 @@
         (pin (num 26) (name AREF) (type output))
         (pin (num 27) (name RESET) (type input))
         (pin (num 28) (name 3V3) (type input))))
+    (libpart (lib BenchBudEE) (part MCP4801)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) MCP4801)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name Vdd) (type input))
+        (pin (num 2) (name ~CS) (type input))
+        (pin (num 3) (name SCK) (type input))
+        (pin (num 4) (name SDI) (type input))
+        (pin (num 5) (name ~LDAC) (type input))
+        (pin (num 6) (name ~SHDN) (type input))
+        (pin (num 7) (name Vss) (type input))
+        (pin (num 8) (name Vout) (type input))))
+    (libpart (lib BenchBudEE) (part MOS_N_NUM)
+      (docs transistors/mos/*.*)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) MOS_N_NUM)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name G) (type input))
+        (pin (num 2) (name D) (type passive))
+        (pin (num 3) (name S) (type passive))))
     (libpart (lib BenchBudEE) (part SPDT)
       (description "Single Pole, Double Throw")
       (fields
@@ -1075,18 +1088,7 @@
         (pin (num 2) (name COIL+) (type input))
         (pin (num 3) (name NO) (type passive))
         (pin (num 4) (name NC) (type passive))
-        (pin (num 5) (name COIL-) (type input))))
-    (libpart (lib BenchBudEE) (part MOS_N_NUM)
-      (docs transistors/mos/*.*)
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) MOS_N_NUM)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name G) (type input))
-        (pin (num 2) (name D) (type passive))
-        (pin (num 3) (name S) (type passive)))))
+        (pin (num 5) (name COIL-) (type input)))))
   (libraries
     (library (logical device)
       (uri "C:\\Program Files (x86)\\KiCad\\share\\library\\device.lib"))

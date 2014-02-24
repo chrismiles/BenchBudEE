@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 2/24/2014 7:01:19 PM
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 2/24/2014 7:21:09 PM
 
 BeginCmp
 TimeStamp = /52EC4D59/52F9043E;
@@ -199,8 +199,8 @@ EndCmp
 BeginCmp
 TimeStamp = /52EC4DEA/52F84602;
 Reference = D4;
-ValeurCmp = DIODESCH;
-IdModule  = SMA;
+ValeurCmp = B0540WS-7;
+IdModule  = SOD-323;
 EndCmp
 
 BeginCmp
@@ -298,7 +298,7 @@ BeginCmp
 TimeStamp = /52EC4DEA/52F845E0;
 Reference = L4;
 ValeurCmp = 22u;
-IdModule  = ;
+IdModule  = NR4012;
 EndCmp
 
 BeginCmp
