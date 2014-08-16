@@ -36,14 +36,14 @@ void loop()
   digitalWrite(SHDN_N, HIGH);
   
   MCP4801Write(16);
-  delay(5000);
+  //delay(5000);
   
   for (int pwm_level = 0; pwm_level < 4; pwm_level++) {
     analogWrite(FAN_PWM, pwm_level * 64);
     delay(5000);
   }
   
-  analogWrite(FAN_PWM, 255);
+  analogWrite(FAN_PWM, 245);
   delay(5000);
 }
 
